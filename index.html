@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Aleatório</title>
+    <style>
+        body { text-align: center; font-family: sans-serif; transition: background 0.5s; }
+        #conteudo { margin-top: 20vh; font-size: 2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="conteudo">Carregando...</div>
+    <script>
+        // Array com frases aleatórias
+        const mensagens = ["Olá! Bem-vindoww.","A sorte está lançada.","Que dia incrível!","Código aleatório funcional."];
+        // Array com cores aleatórias
+        const cores = ["#ffadad","#ffd6a5","#fdffb6","#caffbf","#9bf6ff"];
+        
+        // Seleciona item aleatório
+        const randomMsg = mensagens[Math.floor(Math.random() * mensagens.length)];
+        const randomColor = cores[Math.floor(Math.random() * cores.length)];
+        
+        // Aplica ao site
+        document.getElementById("conteudo").innerText = randomMsg;
+        document.body.style.backgroundColor = randomColor;
+    </script>
+</body>
+</html>
